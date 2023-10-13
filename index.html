@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Mohd Noman</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link"
+                ><i class="uil uil-estate nav__icon"></i>Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="uil uil-user nav__icon"></i>About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><i class="uil uil-file-alt nav__icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link"
+                ><i class="uil uil-graduation-cap nav__icon"></i
+                >Qualification</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link"
+                ><i class="uil uil-scenery nav__icon"></i>Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"
+                ><i class="uil uil-message nav__icon"></i>Contact me</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- ===HOME=== -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/mohdnoman27/"
+                target="_blank"
+                class="home__social-icon"
+                ><i class="uil uil-linkedin-alt"></i
+              ></a>
+              <a
+                href="https://github.com/mohdnoman"
+                target="_blank"
+                class="home__social-icon"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+            </div>
+            <div class="home__img">
+              <img
+                src="./assets/profile.jpg"
+                alt="profile Image"
+                class="home__blob-img"
+              />
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'am Mohd Noman</h1>
+              <h3 class="home__subtitle">Frontend developer</h3>
+              <p class="home__description">
+                Passionate frontend developer with an insatiable appetite for
+                learning, dedicated to crafting user-centric web experiences.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ====== ABOUT ====== -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <img
+            src="./assets/profile2.jpg"
+            alt="profile image"
+            class="about__img"
+          />
+          <div class="about__data">
+            <p class="about__description">
+              Passionate frontend developer known for crafting intuitive,
+              eye-catching interfaces. Thrives on creative challenges, with a
+              keen eye for clean, functional design. Let's create something
+              extraordinary!
+            </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-tittle">1+</span>
+                <span class="about__info-name">Year experiences</span>
+              </div>
+              <div>
+                <span class="about__info-tittle">10+</span>
+                <span class="about__info-name">Completed project's</span>
+              </div>
+              <div>
+                <span class="about__info-tittle">8+ </span>
+                <span class="about__info-name"> Techonologies </span>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a
+                download=""
+                href="./assets/resume.pdf"
+                class="button button--flex"
+              >
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====skills==== -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">skills</h2>
+        <span class="section__subtitle"> My technical level </span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!-- =====SKILLS 1===== -->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Frontend development</h1>
+                  <span class="skills__subtitle">More than 1 year</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__html"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__css"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__js"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- =====SKILLS 2===== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-wrench skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Other</h1>
+                  <span class="skills__subtitle">Improving</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__bootstrap"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Figma</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__figma"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Git & GitHub</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__git"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">TypeScript</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__typescript"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- =====SKILLS 3===== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-brain skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Soft skills</h1>
+                  <span class="skills__subtitle">Improving</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Communication Skills</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span
+                      class="skill__percentage skills__communication"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Continuous Learning</h3>
+                    <span class="skills__number">100%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__cl"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Teamwork and Collaboration</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__teamwork"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Adaptability</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skill__percentage skills__adaptability"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====QUALIFICATION===== -->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education" >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+           
+              <div class="qualification__button button--flex" data-target="#courses">
+                <i class="uil uil-file-bookmark-alt qualification__icon"></i>
+                Certificates
+              </div>
+            
+          </div>
+
+          <div class="qualification__sections">
+            <!-- ====QUALIFICATION CONTENT 1 ===== -->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!-- ====QUALIFICARION 1=== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">BS</h3>
+                  <span class="qualification__subtitle">IIT Madras</span>
+                  <div class="qualification__calender">
+                    Pursuing bs in data science from IIT Madras
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"> </span>
+                  <span class="qualification__line"> </span>
+                </div>
+              </div>
+
+              <!-- ===QUALIFICATION 2=== -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"> </span>
+                  <span class="qualification__line"> </span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">English communication</h3>
+                  <span class="qualification__subtitle"
+                    >By Georgia Institute of Technology</span
+                  >
+                  <div class="qualification__calender">Oct 2023 - Dec 2023</div>
+                </div>
+              </div>
+
+              <!-- ====QUALIFICARION 3=== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Leading Diverse Teams & Organizations
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Online course by University of Michigan</span
+                  >
+                  <div class="qualification__calender">Nov 2023</div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"> </span>
+                  <!-- <span class="qualification__line"> </span> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- ====QUALIFICATION CONTENT 2 ===== -->
+            <div class="qualification__content" data-content id="courses">
+              <!-- ===QUALIFICATION 4=== -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"> </span>
+                  <span class="qualification__line"> </span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">UI/UX</h3>
+                  <span class="qualification__subtitle"
+                    >Online course by Meta</span
+                  >
+                  <div class="qualification__calender">sep 2023</div>
+                </div>
+              </div>
+
+              <!-- ===QUALIFICATION 5=== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Meta Front-End Developer Professional Certificate
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Online course by Meta</span
+                  >
+                  <div class="qualification__calender">Aug 2023 - Nov 2023</div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"> </span>
+                  <span class="qualification__line"> </span>
+                </div>
+              </div>
+
+              <!-- ===QUALIFICATION 6=== -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"> </span>
+                  <!-- <span class="qualification__line"> </span> -->
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Advanced React</h3>
+                  <span class="qualification__subtitle"
+                    >Online course by Meta</span
+                  >
+                  <div class="qualification__calender">sep 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
