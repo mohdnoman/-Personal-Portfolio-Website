@@ -268,7 +268,7 @@ section {
 
 .home__blob-img {
   /* height: 230px; */
-  width: 15rem; 
+  width: 15rem;
   border-radius: 50% 25%;
   border: 0.5px solid var(--first-color);
 }
@@ -657,7 +657,7 @@ section {
   font-size: 2rem;
   color: var(--first-color);
 }
-.swiper-button-prev{
+.swiper-button-prev {
   left: -0.5rem;
 }
 .swiper-button-next {
