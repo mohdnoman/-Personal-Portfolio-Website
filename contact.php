@@ -13,9 +13,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     mail($to, $subject, $body);
-
-    // Redirect or display a success message
-    header('Location: success.html');
-    exit();
 }
 ?>

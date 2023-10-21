@@ -619,7 +619,7 @@
             </div>
           </div>
 
-          <form action="contact.php" class="contact__form grid" method="post">
+          <form action="contact.php" class="contact__form grid" method="post" id="contact-form">
             <div class="contact__input grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
@@ -642,11 +642,17 @@
               ></textarea>
             </div>
 
-            <div>
+            <!-- <div>
               <a href="#" class="button button--flex">
                 send Message
                 <i class="uil uil-message button__icon"></i>
               </a>
+            </div> -->
+            <div>
+              <button type="submit" class="button button--flex" onclick="submitForm()">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </button>
             </div>
           </form>
         </div>
