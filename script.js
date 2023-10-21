@@ -157,25 +157,25 @@ themeButton.addEventListener('click', () => {
 
 // ==== CONTACT FORM =================
 
-function submitForm() {
-    var name = $('#contact-form input[name="name"]').val();
-    var email = $('#contact-form input[name="email"]').val();
-    var message = $('#contact-form textarea[name="message"]').val();
+// function submitForm() {
+//     var name = $('#contact-form input[name="name"]').val();
+//     var email = $('#contact-form input[name="email"]').val();
+//     var message = $('#contact-form textarea[name="message"]').val();
   
-    // Perform validation if needed
+//     // Perform validation if needed
   
-    $.ajax({
-      type: 'POST',
-      url: 'contact.php',
-      data: {
-        name: name,
-        email: email,
-        message: message
-      },
-      success: function(data) {
-        // Handle success (if needed)
-        console.log('Form submitted successfully');
-      }
-    });
-  }
+//     $.ajax({
+//       type: 'POST',
+//       url: 'contact.php',
+//       data: {
+//         name: name,
+//         email: email,
+//         message: message
+//       },
+//       success: function(data) {
+//         // Handle success (if needed)
+//         console.log('Form submitted successfully');
+//       }
+//     });
+//   }
   

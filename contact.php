@@ -1,4 +1,6 @@
 <?php
+echo "Reached contact.php"; // Add this line to check if contact.php is being accessed
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
