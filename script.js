@@ -157,25 +157,18 @@ themeButton.addEventListener('click', () => {
 
 // ==== CONTACT FORM =================
 
-// function submitForm() {
-//     var name = $('#contact-form input[name="name"]').val();
-//     var email = $('#contact-form input[name="email"]').val();
-//     var message = $('#contact-form textarea[name="message"]').val();
-  
-//     // Perform validation if needed
-  
-//     $.ajax({
-//       type: 'POST',
-//       url: 'contact.php',
-//       data: {
-//         name: name,
-//         email: email,
-//         message: message
-//       },
-//       success: function(data) {
-//         // Handle success (if needed)
-//         console.log('Form submitted successfully');
-//       }
-//     });
-//   }
-  
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "mohdnoman2751@gmail.com",
+        Password: "BC5523CE9064B0EA9466C22CD58729671B36",
+        To: 'mohdnoman2751@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "contact form message from personal portfolio",
+        Body: "Name:" + document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> message:" + document.getElementById("message").value
+    }).then(
+        message => alert("message sent Succesfully")
+    );
+}

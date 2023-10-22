@@ -619,26 +619,45 @@
             </div>
           </div>
 
-          <form action="contact.php" class="contact__form grid" method="post" id="contact-form">
+          <form
+            action=""
+            onsubmit="sendEmail(); reset(); return false"
+            class="contact__form grid"
+            method="post"
+            id="contact-form"
+          >
             <div class="contact__input grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" name="name"/>
+                <input
+                  type="text"
+                  class="contact__input"
+                  id="name"
+                  name="name"
+                  required
+                />
               </div>
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input" name="email"/>
+              <input
+                type="email"
+                class="contact__input"
+                id="email"
+                name="email"
+                required
+              />
             </div>
 
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
               <textarea
                 name="message"
-                id=""
+                id="message"
                 cols="0"
                 rows="5"
                 class="contact__input"
+                required
               ></textarea>
             </div>
 
@@ -649,7 +668,11 @@
               </a>
             </div> -->
             <div>
-              <button type="submit" class="button button--flex" onclick="submitForm()">
+              <button
+                type="submit"
+                class="button button--flex"
+                onclick="submitForm()"
+              >
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </button>
@@ -715,6 +738,8 @@
 
     <!-- ====SWIPER SLIDE JS ===== -->
     <script src="assets/swiper-bundle.min.js"></script>
+    <!-- ====== STMPJS TO RECIVE CONTACT MAIL ====== -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
