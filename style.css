@@ -730,6 +730,10 @@ section {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+#submit-btn{
+  border: none;
+}
+
 #contact {
   height: 110vh;
 }
