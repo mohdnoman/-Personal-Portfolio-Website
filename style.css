@@ -623,6 +623,15 @@ section {
 
 .portfolio__content {
   padding: 0 1.5rem;
+  display: flex;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio__title {
