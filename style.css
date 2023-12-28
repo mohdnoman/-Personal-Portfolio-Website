@@ -612,7 +612,8 @@ section {
 /* ====PROJECTS ====== */
 
 .portfolio__img {
-  width: 265px;
+  width: 500px;
+  height: auto;
   border-radius: 0.5rem;
   justify-self: center;
 }
