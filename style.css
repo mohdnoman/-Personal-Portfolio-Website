@@ -610,6 +610,10 @@ section {
 }
 
 /* ====PROJECTS ====== */
+.portfolio{
+margin-bottom: 5rem;
+}
+
 
 .portfolio__img {
   width: 500px;
@@ -642,7 +646,7 @@ section {
 }
 
 .portfolio__subtitle {
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-0-5);
 }
 
 .portfolio__description {
